@@ -119,9 +119,6 @@ class MemoryGame extends Component {
     //Compare the card Values
     if(this.countOfSelected === 0){
 
-      //Get a reference to of the card you click and put it in an array for further use
-      this.targets.push(e.target);
-
       //Reveal Card
       e.target.src = 'https://deckofcardsapi.com/static/img/' + e.target.id + '.png';
 
@@ -134,14 +131,15 @@ class MemoryGame extends Component {
       }else{
         //cool spin
         e.target.className = "uncover card";
+
+        //Get a reference to of the card you click and put it in an array for further use
+        this.targets.push(e.target);
+
         //Move to the next card selection
         this.countOfSelected ++;
       }
 
     }else if(this.countOfSelected === 1) {
-
-      //Get a reference to of the card you click and put it in an array for further use
-      this.targets.push(e.target);
 
       //Reveal Card
       e.target.src = 'https://deckofcardsapi.com/static/img/' + e.target.id + '.png';
@@ -155,6 +153,10 @@ class MemoryGame extends Component {
       }else{
         //cool spin
         e.target.className = "uncover card";
+
+        //Get a reference to of the card you click and put it in an array for further use
+        this.targets.push(e.target);
+
         //restart the card selected count
         this.countOfSelected ++;
 
