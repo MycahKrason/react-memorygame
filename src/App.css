@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin-top: 40px;
 }
 
 .App-logo {
@@ -31,3 +32,44 @@
     transform: rotate(360deg);
   }
 }
+
+
+body{
+  background-color: #22252b;
+  color: #fff;
+}
+
+.card{
+  width: 5.8%;
+  margin: 0.8%;
+  background-image: './logo.svg';
+}
+
+.uncover{
+  animation: App-logo-spin 0.3s linear;
+}
+
+.hide{
+  opacity: 0.0;
+  filter: alpha(opacity=0); /* For IE8 and earlier */
+}
+
+.instructions{
+  width: 50%;
+  margin: 100px auto;
+}
+
+.gameBtn{
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 1em;
+  color: white;
+  background: none;
+  border: none;
+}
+
+.gameBtn:focus {
+  outline: none;
+}
+
+
